@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.robotframework.ide.tableditor.activePage./RobotProject/RobotSuite/robot_suite.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./SeleniumAutomation/OrangeHrmSuite/login_suite.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.project.editor.activePage.SeleniumAutomation">
+		<item key="activePage" value="LibrariesProjectConfigurationEditorPart"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./SeleniumAutomation/OpenERMSuite/login_suite.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./SeleniumAutomation/SalesforceSuite/signup_suite.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./SeleniumAutomation/SeleniumAdvanceSuite/selenium_suite.robot">
+		<item key="activePage" value=""/>
+	</section>
+</section>

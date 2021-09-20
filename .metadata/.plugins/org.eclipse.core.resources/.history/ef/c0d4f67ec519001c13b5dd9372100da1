@@ -1,0 +1,10 @@
+*** Settings ***
+Library   SeleniumLibrary  
+Library    OperatingSystem    
+
+*** Test Cases ***
+TC1 Valid Credential
+    
+    Open Browser    url=https://opensource-demo.orangehrmlive.com/    browser=chrome   
+ 
+    

@@ -1,0 +1,12 @@
+*** Settings ***
+Library    SeleniumLibrary    
+Library    OperatingSystem    
+
+*** Test Cases ***
+TC1 Valid Credential
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://www.salesforce.com/in/form/signup/freetrial-sales/?d=jumbo1-btn-ft
+    Input Text    name=UserFirstName    Balaji    

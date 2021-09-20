@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210920 08:09:00.088" rpa="false">
+<suite id="s1" name="RobotProject" source="D:\B-Mine\Company\Company\Inversion\automation_workspace\RobotProject">
+<suite id="s1-s1" name="RobotSuite" source="D:\B-Mine\Company\Company\Inversion\automation_workspace\RobotProject\RobotSuite">
+<suite id="s1-s1-s1" name="Robot Suite" source="D:\B-Mine\Company\Company\Inversion\automation_workspace\RobotProject\RobotSuite\robot_suite.robot">
+<test id="s1-s1-s1-t1" name=" TC2 Print Date">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Today's date</arg>
+</arguments>
+<status status="PASS" starttime="20210920 08:09:00.171" endtime="20210920 08:09:00.172"></status>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<assign>
+<var>${date}</var>
+</assign>
+<msg timestamp="20210920 08:09:00.173" level="INFO">${date} = 2021-09-20 08:09:00.173</msg>
+<status status="PASS" starttime="20210920 08:09:00.172" endtime="20210920 08:09:00.174"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${date}</arg>
+</arguments>
+<status status="PASS" starttime="20210920 08:09:00.174" endtime="20210920 08:09:00.175"></status>
+</kw>
+<status status="PASS" starttime="20210920 08:09:00.170" endtime="20210920 08:09:00.176" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210920 08:09:00.162" endtime="20210920 08:09:00.177"></status>
+</suite>
+<status status="PASS" starttime="20210920 08:09:00.158" endtime="20210920 08:09:00.180"></status>
+</suite>
+<status status="PASS" starttime="20210920 08:09:00.132" endtime="20210920 08:09:00.182"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="RobotProject">RobotProject</stat>
+<stat pass="1" fail="0" id="s1-s1" name="RobotSuite">RobotProject.RobotSuite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Robot Suite">RobotProject.RobotSuite.Robot Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
