@@ -18,4 +18,37 @@
 	<section name="org.robotframework.ide.tableditor.activePage./SeleniumAutomation/SeleniumAdvanceSuite/selenium_suite.robot">
 		<item key="activePage" value=""/>
 	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./SeleniumAutomation/AssignmentSuite/Selenium_Suite.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./SeleniumAutomation/AssignmentSuite/selenium_suite.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/LoginSuite/verify_valid_credential_tests.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/LoginSuite/verify_invalid_credential_tests.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/Resource/Base/CommonFunctionality.resource">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="problemPreferences">
+		<item key="CODE_STYLE" value="true"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/Resource/Pages/LoginPage.resource">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/Resource/Pages/DashboardPage.resource">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./RobotProject/RobotSuite/rb_tests.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/LoginSuite/sample.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/LoginSuite/sample_tests.robot">
+		<item key="activePage" value=""/>
+	</section>
 </section>

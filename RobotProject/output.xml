@@ -1,62 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 13:48:06.024" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 14:17:20.308" rpa="false">
 <suite id="s1" name="RobotProject" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject">
 <suite id="s1-s1" name="RobotSuite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite">
-<suite id="s1-s1-s1" name="Robot Suite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite\robot_suite.robot">
-<test id="s1-s1-s1-t1" name="TC12">
-<kw name="Check Postive Or Negative">
+<suite id="s1-s1-s1" name="Rb Tests" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite\rb_tests.robot">
+<test id="s1-s1-s1-t1" name="TC1">
+<kw name="Log To Console" library="BuiltIn" type="setup">
+<doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>-45</arg>
+<arg>startTestSetup</arg>
 </arguments>
-<assign>
-<var>${text}</var>
-</assign>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${num}&lt;0</arg>
-<arg>Return From Keyword</arg>
-<arg>negative</arg>
-</arguments>
-<kw name="Return From Keyword" library="BuiltIn">
-<doc>Returns from the enclosing user keyword.</doc>
-<arguments>
-<arg>negative</arg>
-</arguments>
-<msg timestamp="20210921 13:48:06.110" level="INFO">Returning from the enclosing user keyword.</msg>
-<status status="PASS" starttime="20210921 13:48:06.109" endtime="20210921 13:48:06.111"></status>
-</kw>
-<status status="PASS" starttime="20210921 13:48:06.108" endtime="20210921 13:48:06.111"></status>
-</kw>
-<msg timestamp="20210921 13:48:06.112" level="INFO">${text} = negative</msg>
-<status status="PASS" starttime="20210921 13:48:06.108" endtime="20210921 13:48:06.112"></status>
+<status status="PASS" starttime="20210921 14:17:20.406" endtime="20210921 14:17:20.406"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${text}</arg>
+<arg>tc1</arg>
 </arguments>
-<status status="PASS" starttime="20210921 13:48:06.112" endtime="20210921 13:48:06.117"></status>
+<status status="PASS" starttime="20210921 14:17:20.407" endtime="20210921 14:17:20.410"></status>
 </kw>
-<status status="PASS" starttime="20210921 13:48:06.107" endtime="20210921 13:48:06.117" critical="yes"></status>
+<kw name="Log To Console" library="BuiltIn" type="teardown">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>endTestTeardown</arg>
+</arguments>
+<status status="PASS" starttime="20210921 14:17:20.410" endtime="20210921 14:17:20.411"></status>
+</kw>
+<status status="PASS" starttime="20210921 14:17:20.405" endtime="20210921 14:17:20.411" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210921 13:48:06.095" endtime="20210921 13:48:06.118"></status>
+<test id="s1-s1-s1-t2" name="TC2">
+<kw name="Log To Console" library="BuiltIn" type="setup">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>startTestSetup</arg>
+</arguments>
+<status status="PASS" starttime="20210921 14:17:20.413" endtime="20210921 14:17:20.414"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc2</arg>
+</arguments>
+<status status="PASS" starttime="20210921 14:17:20.414" endtime="20210921 14:17:20.415"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn" type="teardown">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>endTestTeardown</arg>
+</arguments>
+<status status="PASS" starttime="20210921 14:17:20.415" endtime="20210921 14:17:20.415"></status>
+</kw>
+<status status="PASS" starttime="20210921 14:17:20.412" endtime="20210921 14:17:20.416" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="TC3">
+<kw name="Log To Console" library="BuiltIn" type="setup">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>localsetup</arg>
+</arguments>
+<status status="PASS" starttime="20210921 14:17:20.417" endtime="20210921 14:17:20.417"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc3</arg>
+</arguments>
+<status status="PASS" starttime="20210921 14:17:20.418" endtime="20210921 14:17:20.418"></status>
+</kw>
+<status status="PASS" starttime="20210921 14:17:20.416" endtime="20210921 14:17:20.418" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210921 14:17:20.390" endtime="20210921 14:17:20.419"></status>
 </suite>
-<status status="PASS" starttime="20210921 13:48:06.091" endtime="20210921 13:48:06.120"></status>
+<status status="PASS" starttime="20210921 14:17:20.385" endtime="20210921 14:17:20.421"></status>
 </suite>
-<status status="PASS" starttime="20210921 13:48:06.064" endtime="20210921 13:48:06.121"></status>
+<status status="PASS" starttime="20210921 14:17:20.358" endtime="20210921 14:17:20.423"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="RobotProject">RobotProject</stat>
-<stat pass="1" fail="0" id="s1-s1" name="RobotSuite">RobotProject.RobotSuite</stat>
-<stat pass="1" fail="0" id="s1-s1-s1" name="Robot Suite">RobotProject.RobotSuite.Robot Suite</stat>
+<stat pass="3" fail="0" id="s1" name="RobotProject">RobotProject</stat>
+<stat pass="3" fail="0" id="s1-s1" name="RobotSuite">RobotProject.RobotSuite</stat>
+<stat pass="3" fail="0" id="s1-s1-s1" name="Rb Tests">RobotProject.RobotSuite.Rb Tests</stat>
 </suite>
 </statistics>
 <errors>
