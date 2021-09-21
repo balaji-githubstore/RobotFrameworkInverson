@@ -1,7 +1,35 @@
 *** Settings ***
 Library    DateTime    
 
+*** Keywords ***
+Get My Name
+    FOR    ${i}    IN RANGE    1    11
+        Run Keyword If    '${i}'=='54'     Return From Keyword     bala    
+    END  
+
+    [Return]    bala123
+
+Check Postive Or Negative
+    [Arguments]    ${num}
+    Run Keyword If    ${num}<0   Return From Keyword     negative
+    Run Keyword If    ${num}>0   Return From Keyword     postive
+
+Get My City
+    Return From Keyword    Chennai
+
 *** Test Cases ***
+TC12
+    ${text}    Check Postive Or Negative    -45
+    Log To Console    ${text}    
+
+TC11
+   ${name}     Get My Name
+   Log To Console    ${name}    
+
+   ${city}     Get My City
+   Log To Console    ${city}   
+
+
 TC1 Print Name
     Log To Console    Balaji    
     Log To Console    Hello, Everyone   

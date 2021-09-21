@@ -1,114 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 12:17:02.150" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 14:00:31.490" rpa="false">
 <suite id="s1" name="OpenEMRApplication" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\OpenEMRApplication">
 <suite id="s1-s1" name="LoginSuite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\OpenEMRApplication\LoginSuite">
 <suite id="s1-s1-s1" name="Verify Invalid Credential Tests" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\OpenEMRApplication\LoginSuite\verify_invalid_credential_tests.robot">
 <test id="s1-s1-s1-t1" name="Verify Invalid Credential Tests">
+<kw name="Launch Browser" library="CommonFunctionality">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
 <arguments>
 <arg>Path</arg>
 <arg>${EXECDIR}${/}driver</arg>
 </arguments>
-<msg timestamp="20210921 12:17:02.600" level="INFO">Environment variable 'Path' set to value 'D:/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;D:/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath1;C:\Program Files\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools;C:\Users\JiDi\AppData\Local\Android\Sdk\emulator;C:\Program Files\nodejs\;C:\Components\Maven\apache-maven-3.6.3\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\Program Files\Python39\Scripts;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Components\CSharp\NUnit.Console-3.12.0\bin\netcoreapp3.1;C:\Program Files\Java\jdk1.8.0_281\bin;C:\Users\JiDi\AppData\Roaming\npm;C:\Users\JiDi\AppData\Local\Microsoft\WindowsApps1;C:\Users\JiDi\.dotnet\tools;C:\Users\JiDi\AppData\Local\Programs\Microsoft VS Code\bin;;D:\eclipse;;D:\B-Mine\Company\Company\Iverson\automation_workspace\OpenEMRApplication\driver'.</msg>
-<status status="PASS" starttime="20210921 12:17:02.600" endtime="20210921 12:17:02.601"></status>
+<msg timestamp="20210921 14:00:36.489" level="INFO">Environment variable 'Path' set to value 'D:/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;D:/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath1;C:\Program Files\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools;C:\Users\JiDi\AppData\Local\Android\Sdk\emulator;C:\Program Files\nodejs\;C:\Components\Maven\apache-maven-3.6.3\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\Program Files\Python39\Scripts;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Components\CSharp\NUnit.Console-3.12.0\bin\netcoreapp3.1;C:\Program Files\Java\jdk1.8.0_281\bin;C:\Users\JiDi\AppData\Roaming\npm;C:\Users\JiDi\AppData\Local\Microsoft\WindowsApps1;C:\Users\JiDi\.dotnet\tools;C:\Users\JiDi\AppData\Local\Programs\Microsoft VS Code\bin;;D:\eclipse;;D:\B-Mine\Company\Company\Iverson\automation_workspace\OpenEMRApplication\driver'.</msg>
+<status status="PASS" starttime="20210921 14:00:36.478" endtime="20210921 14:00:36.489"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>browser=chrome</arg>
+<arg>browser=${BROWSER NAME}</arg>
 </arguments>
-<msg timestamp="20210921 12:17:02.602" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20210921 12:17:02.601" endtime="20210921 12:17:04.798"></status>
+<msg timestamp="20210921 14:00:36.498" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20210921 14:00:36.491" endtime="20210921 14:00:38.341"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210921 12:17:04.798" endtime="20210921 12:17:04.925"></status>
+<status status="PASS" starttime="20210921 14:00:38.342" endtime="20210921 14:00:38.479"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20210921 12:17:04.925" endtime="20210921 12:17:04.928"></status>
+<status status="PASS" starttime="20210921 14:00:38.480" endtime="20210921 14:00:38.510"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
-<arg>url=https://demo.openemr.io/b/openemr</arg>
+<arg>url=${URL}</arg>
 </arguments>
-<msg timestamp="20210921 12:17:04.930" level="INFO">Opening url 'https://demo.openemr.io/b/openemr'</msg>
-<status status="PASS" starttime="20210921 12:17:04.928" endtime="20210921 12:17:08.833"></status>
+<msg timestamp="20210921 14:00:38.521" level="INFO">Opening url 'https://demo.openemr.io/b/openemr'</msg>
+<status status="PASS" starttime="20210921 14:00:38.511" endtime="20210921 14:00:39.379"></status>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" starttime="20210921 14:00:31.947" endtime="20210921 14:00:39.380"></status>
+</kw>
+<kw name="Login To Portal" library="LoginPage">
+<kw name="Enter Username" library="LoginPage">
 <arguments>
-<arg>id=authUser</arg>
-<arg>admin123</arg>
+<arg>${username}</arg>
 </arguments>
-<msg timestamp="20210921 12:17:08.835" level="INFO">Typing text 'admin123' into text field 'id=authUser'.</msg>
-<status status="PASS" starttime="20210921 12:17:08.834" endtime="20210921 12:17:08.947"></status>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>id=clearPass</arg>
-<arg>pass</arg>
-</arguments>
-<msg timestamp="20210921 12:17:08.949" level="INFO">Typing password into text field 'id=clearPass'.</msg>
-<msg timestamp="20210921 12:17:08.988" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20210921 12:17:09.035" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20210921 12:17:08.948" endtime="20210921 12:17:09.036"></status>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<arguments>
-<arg>name=languageChoice</arg>
-<arg>English (Indian)</arg>
-</arguments>
-<msg timestamp="20210921 12:17:09.036" level="INFO">Selecting options from selection list 'name=languageChoice' by label English (Indian).</msg>
-<status status="PASS" starttime="20210921 12:17:09.036" endtime="20210921 12:17:09.173"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//button[@type='submit']</arg>
-</arguments>
-<msg timestamp="20210921 12:17:09.174" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20210921 12:17:09.174" endtime="20210921 12:17:10.230"></status>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<arguments>
-<arg>//div[contains(text(),'Invalid')]</arg>
-<arg>Invalid username or password</arg>
-</arguments>
-<msg timestamp="20210921 12:17:10.263" level="INFO">Element '//div[contains(text(),'Invalid')]' contains text 'Invalid username or password'.</msg>
-<status status="PASS" starttime="20210921 12:17:10.230" endtime="20210921 12:17:10.264"></status>
-</kw>
-<status status="PASS" starttime="20210921 12:17:02.599" endtime="20210921 12:17:10.264" critical="yes"></status>
-</test>
-<doc>This suite will handles all the test case related to invalid credentials
-Stories connected with OP-TC-03</doc>
-<status status="PASS" starttime="20210921 12:17:02.288" endtime="20210921 12:17:10.265"></status>
-</suite>
-<status status="PASS" starttime="20210921 12:17:02.285" endtime="20210921 12:17:10.271"></status>
-</suite>
-<status status="PASS" starttime="20210921 12:17:02.259" endtime="20210921 12:17:10.273"></status>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="1" fail="0" id="s1" name="OpenEMRApplication">OpenEMRApplication</stat>
-<stat pass="1" fail="0" id="s1-s1" name="LoginSuite">OpenEMRApplication.LoginSuite</stat>
-<stat pass="1" fail="0" id="s1-s1-s1" name="Verify Invalid Credential Tests">OpenEMRApplication.LoginSuite.Verify Invalid Credential Tests</stat>
-</suite>
-</statistics>
 <errors>
+<msg timestamp="20210921 14:00:52.182" level="ERROR">Execution stopped by user.</msg>
 </errors>
 </robot>

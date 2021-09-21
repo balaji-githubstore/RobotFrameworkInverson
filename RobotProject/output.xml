@@ -1,79 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 11:58:25.558" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 13:48:06.024" rpa="false">
 <suite id="s1" name="RobotProject" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject">
 <suite id="s1-s1" name="RobotSuite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite">
 <suite id="s1-s1-s1" name="Robot Suite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite\robot_suite.robot">
-<test id="s1-s1-s1-t1" name="TC5">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<test id="s1-s1-s1-t1" name="TC12">
+<kw name="Check Postive Or Negative">
 <arguments>
-<arg>D:\\B-Mine\\Company\\Company\\Iverson\\automation_workspace\\RobotProject\\RobotSuite</arg>
+<arg>-45</arg>
 </arguments>
-<status status="PASS" starttime="20210921 11:58:25.633" endtime="20210921 11:58:25.634"></status>
+<assign>
+<var>${text}</var>
+</assign>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${num}&lt;0</arg>
+<arg>Return From Keyword</arg>
+<arg>negative</arg>
+</arguments>
+<kw name="Return From Keyword" library="BuiltIn">
+<doc>Returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>negative</arg>
+</arguments>
+<msg timestamp="20210921 13:48:06.110" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20210921 13:48:06.109" endtime="20210921 13:48:06.111"></status>
+</kw>
+<status status="PASS" starttime="20210921 13:48:06.108" endtime="20210921 13:48:06.111"></status>
+</kw>
+<msg timestamp="20210921 13:48:06.112" level="INFO">${text} = negative</msg>
+<status status="PASS" starttime="20210921 13:48:06.108" endtime="20210921 13:48:06.112"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${EXECDIR}</arg>
+<arg>${text}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 11:58:25.634" endtime="20210921 11:58:25.634"></status>
+<status status="PASS" starttime="20210921 13:48:06.112" endtime="20210921 13:48:06.117"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${EXECDIR}\driver</arg>
-</arguments>
-<status status="PASS" starttime="20210921 11:58:25.635" endtime="20210921 11:58:25.635"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${EXECDIR}\\driver</arg>
-</arguments>
-<status status="PASS" starttime="20210921 11:58:25.636" endtime="20210921 11:58:25.636"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${EXECDIR}${/}driver</arg>
-</arguments>
-<status status="PASS" starttime="20210921 11:58:25.636" endtime="20210921 11:58:25.637"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${OUTPUT_DIR}</arg>
-</arguments>
-<status status="PASS" starttime="20210921 11:58:25.637" endtime="20210921 11:58:25.637"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${SUITE_NAME}</arg>
-</arguments>
-<status status="PASS" starttime="20210921 11:58:25.637" endtime="20210921 11:58:25.638"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${TEST_NAME}</arg>
-</arguments>
-<status status="PASS" starttime="20210921 11:58:25.638" endtime="20210921 11:58:25.638"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${TEMPDIR}</arg>
-</arguments>
-<status status="PASS" starttime="20210921 11:58:25.638" endtime="20210921 11:58:25.639"></status>
-</kw>
-<status status="PASS" starttime="20210921 11:58:25.633" endtime="20210921 11:58:25.639" critical="yes"></status>
+<status status="PASS" starttime="20210921 13:48:06.107" endtime="20210921 13:48:06.117" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210921 11:58:25.627" endtime="20210921 11:58:25.640"></status>
+<status status="PASS" starttime="20210921 13:48:06.095" endtime="20210921 13:48:06.118"></status>
 </suite>
-<status status="PASS" starttime="20210921 11:58:25.624" endtime="20210921 11:58:25.641"></status>
+<status status="PASS" starttime="20210921 13:48:06.091" endtime="20210921 13:48:06.120"></status>
 </suite>
-<status status="PASS" starttime="20210921 11:58:25.599" endtime="20210921 11:58:25.642"></status>
+<status status="PASS" starttime="20210921 13:48:06.064" endtime="20210921 13:48:06.121"></status>
 </suite>
 <statistics>
 <total>
