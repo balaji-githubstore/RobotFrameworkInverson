@@ -35,7 +35,16 @@ TC4 Loop
     
 
 
-
+TC5 
+    Log To Console    ${CURDIR}    
+    Log To Console    ${EXECDIR} 
+    Log To Console    ${EXECDIR}\driver 
+    Log To Console    ${EXECDIR}\\driver
+    Log To Console    ${EXECDIR}${/}driver
+    Log To Console    ${OUTPUT_DIR}    
+    Log To Console    ${SUITE_NAME}    
+    Log To Console    ${TEST_NAME}    
+    Log To Console    ${TEMPDIR}       
 
 
 

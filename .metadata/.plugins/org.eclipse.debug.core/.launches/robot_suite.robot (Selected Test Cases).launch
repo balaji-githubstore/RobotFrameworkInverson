@@ -17,7 +17,7 @@
     <stringAttribute key="Remote agent" value="false"/>
     <stringAttribute key="Robot arguments" value=""/>
     <mapAttribute key="Test suites">
-        <mapEntry key="RobotSuite/robot_suite.robot" value="tc4 loop"/>
+        <mapEntry key="RobotSuite/robot_suite.robot" value="tc5"/>
     </mapAttribute>
     <setAttribute key="Test suites unselected"/>
     <stringAttribute key="Version of configuration" value="1"/>

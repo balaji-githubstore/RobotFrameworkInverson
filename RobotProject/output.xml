@@ -1,216 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 08:10:32.766" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 11:58:25.558" rpa="false">
 <suite id="s1" name="RobotProject" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject">
 <suite id="s1-s1" name="RobotSuite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite">
 <suite id="s1-s1-s1" name="Robot Suite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite\robot_suite.robot">
-<test id="s1-s1-s1-t1" name="TC4 Loop">
-<kw name="${i} IN RANGE [ 1 | 11 ]" type="for">
-<kw name="${i} = 1" type="foritem">
+<test id="s1-s1-s1-t1" name="TC5">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${i}</arg>
+<arg>D:\\B-Mine\\Company\\Company\\Iverson\\automation_workspace\\RobotProject\\RobotSuite</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:10:42.336" endtime="20210921 08:10:44.084"></status>
+<status status="PASS" starttime="20210921 11:58:25.633" endtime="20210921 11:58:25.634"></status>
 </kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:10:44.086" endtime="20210921 08:10:54.153"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:10:42.334" endtime="20210921 08:10:54.154"></status>
-</kw>
-<kw name="${i} = 2" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${i}</arg>
+<arg>${EXECDIR}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:10:55.131" endtime="20210921 08:10:59.439"></status>
+<status status="PASS" starttime="20210921 11:58:25.634" endtime="20210921 11:58:25.634"></status>
 </kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:10:59.440" endtime="20210921 08:11:08.855"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:10:54.156" endtime="20210921 08:11:08.856"></status>
-</kw>
-<kw name="${i} = 3" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${i}</arg>
+<arg>${EXECDIR}\driver</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:11:09.740" endtime="20210921 08:11:10.302"></status>
+<status status="PASS" starttime="20210921 11:58:25.635" endtime="20210921 11:58:25.635"></status>
 </kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:10.303" endtime="20210921 08:11:11.286"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:11:08.858" endtime="20210921 08:11:11.287"></status>
-</kw>
-<kw name="${i} = 4" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${i}</arg>
+<arg>${EXECDIR}\\driver</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:11:11.964" endtime="20210921 08:11:12.503"></status>
+<status status="PASS" starttime="20210921 11:58:25.636" endtime="20210921 11:58:25.636"></status>
 </kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:12.504" endtime="20210921 08:11:13.174"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:11:11.289" endtime="20210921 08:11:13.175"></status>
-</kw>
-<kw name="${i} = 5" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${i}</arg>
+<arg>${EXECDIR}${/}driver</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:11:14.151" endtime="20210921 08:11:14.704"></status>
+<status status="PASS" starttime="20210921 11:58:25.636" endtime="20210921 11:58:25.637"></status>
 </kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>hello</arg>
+<arg>${OUTPUT_DIR}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:11:15.871" endtime="20210921 08:11:15.875"></status>
+<status status="PASS" starttime="20210921 11:58:25.637" endtime="20210921 11:58:25.637"></status>
 </kw>
-<status status="PASS" starttime="20210921 08:11:14.705" endtime="20210921 08:11:15.876"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:11:13.176" endtime="20210921 08:11:15.877"></status>
-</kw>
-<kw name="${i} = 6" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${i}</arg>
+<arg>${SUITE_NAME}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:11:22.316" endtime="20210921 08:11:23.079"></status>
+<status status="PASS" starttime="20210921 11:58:25.637" endtime="20210921 11:58:25.638"></status>
 </kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:23.080" endtime="20210921 08:11:23.894"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:11:15.878" endtime="20210921 08:11:23.895"></status>
-</kw>
-<kw name="${i} = 7" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${i}</arg>
+<arg>${TEST_NAME}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:11:24.459" endtime="20210921 08:11:24.822"></status>
+<status status="PASS" starttime="20210921 11:58:25.638" endtime="20210921 11:58:25.638"></status>
 </kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:24.824" endtime="20210921 08:11:25.302"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:11:23.896" endtime="20210921 08:11:25.303"></status>
-</kw>
-<kw name="${i} = 8" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${i}</arg>
+<arg>${TEMPDIR}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 08:11:25.755" endtime="20210921 08:11:26.014"></status>
+<status status="PASS" starttime="20210921 11:58:25.638" endtime="20210921 11:58:25.639"></status>
 </kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:26.015" endtime="20210921 08:11:26.261"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:11:25.304" endtime="20210921 08:11:26.262"></status>
-</kw>
-<kw name="${i} = 9" type="foritem">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${i}</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:26.484" endtime="20210921 08:11:26.750"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:26.751" endtime="20210921 08:11:27.006"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:11:26.263" endtime="20210921 08:11:27.007"></status>
-</kw>
-<kw name="${i} = 10" type="foritem">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${i}</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:27.300" endtime="20210921 08:11:27.582"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${i}'=='5'</arg>
-<arg>Log To Console</arg>
-<arg>hello</arg>
-</arguments>
-<status status="PASS" starttime="20210921 08:11:27.583" endtime="20210921 08:11:28.062"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:11:27.008" endtime="20210921 08:11:28.063"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:10:32.983" endtime="20210921 08:11:28.064"></status>
-</kw>
-<status status="PASS" starttime="20210921 08:10:32.981" endtime="20210921 08:11:28.065" critical="yes"></status>
+<status status="PASS" starttime="20210921 11:58:25.633" endtime="20210921 11:58:25.639" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210921 08:10:32.966" endtime="20210921 08:11:28.067"></status>
+<status status="PASS" starttime="20210921 11:58:25.627" endtime="20210921 11:58:25.640"></status>
 </suite>
-<status status="PASS" starttime="20210921 08:10:32.957" endtime="20210921 08:11:28.072"></status>
+<status status="PASS" starttime="20210921 11:58:25.624" endtime="20210921 11:58:25.641"></status>
 </suite>
-<status status="PASS" starttime="20210921 08:10:32.881" endtime="20210921 08:11:28.076"></status>
+<status status="PASS" starttime="20210921 11:58:25.599" endtime="20210921 11:58:25.642"></status>
 </suite>
 <statistics>
 <total>
