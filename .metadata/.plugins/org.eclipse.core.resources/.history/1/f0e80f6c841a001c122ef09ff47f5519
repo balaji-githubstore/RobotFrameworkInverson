@@ -1,0 +1,110 @@
+*** Settings ***
+Library    SeleniumLibrary    
+Library    OperatingSystem    
+
+*** Test Cases ***
+TC1 Frame
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://netbanking.hdfcbank.com/netbanking/
+    Select Frame    xpath=//frame[@name='login_page']
+    Input Text    name=fldLoginUserId    test123    
+    Click Element    link=CONTINUE  
+    Unselect Frame  
+    
+TC2 Multiple Tabs
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://www.online.citibank.co.in/
+    Click Element    partial link=APPLY FOR CREDIT CARD  
+    Switch Window    Online Credit Card Application Form | Citi India
+    Click Element    link=Travel    
+    Close Browser
+    
+TC3 Multiple Tabs
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://www.online.citibank.co.in/
+    Click Element    xpath=//span[text()='Login']  
+    Switch Window    Citibank India
+    Input Text    id=User_Id    test123   
+    Close Window
+    Switch Window    Citi India - Credit Cards, Personal & Home Loans, Investment, Wealth Management & Banking
+    ${title}     Get Title
+    Log To Console    ${title}     
+
+TC4 Multiple Tabs
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://www.online.citibank.co.in/
+    Click Element    xpath=//span[text()='Login']  
+    Switch Window    NEW
+    Input Text    id=User_Id    test123   
+    Close Window
+    Switch Window    MAIN
+    ${title}     Get Title
+    Log To Console    ${title}   
+
+TC5 Alert
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm
+    Click Element    xpath=//img[@alt='Go']   
+    ${alerttext}    Handle Alert    LEAVE    40s   
+    Log To Console    ${alerttext}      
+    Alert Should Be Present    text=Customer ID cannot be left blank.    timeout=40s     
+    
+TC6 Get
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://demo.openemr.io/b/openemr  
+    
+    ${appdesc}   Get Text    //p[contains(text(),'most')]
+    Log To Console    ${appdesc}  
+      
+    ${linktext}    Get Text    partial link=Licensing
+    Log To Console    ${linktext}    
+    
+    ${href}    Get Element Attribute    partial link=Licensing    href
+    Log To Console    ${href}    
+    
+    ${placeholder}    Get Element Attribute    id=authUser    placeholder
+    Log To Console    ${placeholder}
+    
+
+TC7 WebTable
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://datatables.net/extensions/select/examples/initialisation/checkbox.html
+    ${name1}     Get Text    //table[@id='example']/tbody/tr[1]/td[2]
+    Log To Console    ${name1}    
+    ${name2}     Get Text    //table[@id='example']/tbody/tr[2]/td[2]
+    Log To Console    ${name2}  
+    
+
+TC8 WebTable
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://datatables.net/extensions/select/examples/initialisation/checkbox.html
+  
+    ${name}     Get Text    //table[@id='example']/tbody/tr[1]/td[2]
+    Log To Console    ${name}  
+    
+
+

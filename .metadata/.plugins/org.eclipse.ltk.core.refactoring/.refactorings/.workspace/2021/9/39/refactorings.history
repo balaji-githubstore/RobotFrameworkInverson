@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 11 resources" deleteContents="false" description="Delete 11 resources" element1="/SeleniumAutomation/selenium-screenshot-1.png" element10="/SeleniumAutomation/selenium-screenshot-8.png" element11="/SeleniumAutomation/selenium-screenshot-9.png" element2="/SeleniumAutomation/selenium-screenshot-10.png" element3="/SeleniumAutomation/selenium-screenshot-11.png" element4="/SeleniumAutomation/selenium-screenshot-2.png" element5="/SeleniumAutomation/selenium-screenshot-3.png" element6="/SeleniumAutomation/selenium-screenshot-4.png" element7="/SeleniumAutomation/selenium-screenshot-5.png" element8="/SeleniumAutomation/selenium-screenshot-6.png" element9="/SeleniumAutomation/selenium-screenshot-7.png" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="11" stamp="1632188238803"/>
+</session>

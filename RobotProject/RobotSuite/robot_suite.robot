@@ -12,5 +12,32 @@ TC1 Print Name
  TC2 Print Date
     Log To Console    Today's date    
     ${date}    Get Current Date 
-    Log To Console    ${date}       
+    Log To Console    ${date}    
+
+TC3 Loop  
+
+    FOR    ${i}    IN RANGE    1    11
+        Log To Console    ${i}    
+    END
     
+    Log To Console    ------------------------    
+    FOR    ${i}    IN RANGE    1     50    2
+         Log To Console    ${i}  
+    END
+    
+
+    
+TC4 Loop  
+    FOR    ${i}    IN RANGE    1    11
+        Log To Console    ${i}  
+        Run Keyword If    '${i}'=='5'    Log To Console    hello          
+    END   
+    
+
+
+
+
+
+
+
+

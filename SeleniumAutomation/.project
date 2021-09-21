@@ -21,6 +21,11 @@
 			<location>C:/Program Files/Python39/lib/site-packages/robot/libraries/BuiltIn.py</location>
 		</link>
 		<link>
+			<name>libspecs/OperatingSystem.py</name>
+			<type>1</type>
+			<location>C:/Program Files/Python39/lib/site-packages/robot/libraries/OperatingSystem.py</location>
+		</link>
+		<link>
 			<name>libspecs/SeleniumLibrary.py</name>
 			<type>1</type>
 			<location>C:/Users/JiDi/AppData/Roaming/Python/Python39/site-packages/SeleniumLibrary/keywords/browsermanagement.py</location>

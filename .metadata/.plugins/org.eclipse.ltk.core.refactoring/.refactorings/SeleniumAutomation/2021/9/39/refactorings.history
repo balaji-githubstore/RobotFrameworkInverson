@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SeleniumAutomation/AssignmentSuite/Selenium_Suite.robot&apos; to &apos;selenium_suite.robot&apos;" description="Rename resource &apos;Selenium_Suite.robot&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="AssignmentSuite/Selenium_Suite.robot" name="selenium_suite.robot" stamp="1632186794102" updateReferences="true"/>
+</session>

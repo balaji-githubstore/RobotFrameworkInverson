@@ -17,7 +17,7 @@
     <stringAttribute key="Remote agent" value="false"/>
     <stringAttribute key="Robot arguments" value=""/>
     <mapAttribute key="Test suites">
-        <mapEntry key="SeleniumAdvanceSuite/selenium_suite.robot" value="tc4 multiple tabs"/>
+        <mapEntry key="SeleniumAdvanceSuite/selenium_suite.robot" value="tc11 webtable"/>
     </mapAttribute>
     <setAttribute key="Test suites unselected"/>
     <stringAttribute key="Version of configuration" value="1"/>
