@@ -152,4 +152,122 @@ TC11 WebTable
     Log To Console    ${cell}    
             
 TC12 WebTableScroll
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=headlesschrome
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://datatables.net/examples/basic_init/scroll_y.html
+
+    ${count}    Get Element Count    xpath=//table[@id='example']/tbody/tr
+    Log To Console    ${count} 
     
+    FOR    ${i}    IN RANGE    1    ${count}+1
+         Scroll Element Into View    //table[@id='example']/tbody/tr[${i}]/td[2]
+         ${name}     Get Text    //table[@id='example']/tbody/tr[${i}]/td[2]
+          Log To Console    ${name}       
+    END
+
+#clearPass
+
+TC13 CSS selector
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=http://demo.openemr.io/b/openemr/interface/login/login.php?site=default
+    Input Text    css=#authUser    admin 
+    Input Text    css=#clearPass    pass
+    Select From List By Label    css=select[name='languageChoice']    Dutch
+    Click Element    css=[type='submit']            
+
+
+TC14 Javascript selector
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=http://demo.openemr.io/b/openemr/interface/login/login.php?site=default
+    Execute Javascript    document.getElementById('authUser').value='balaji'
+    Execute Javascript    document.querySelector("[type='submit']").click()
+
+TC15_JavascriptWebElementCSSClick
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    10s
+    Go To    url=https://demo.openemr.io/b/openemr
+    Input Text    id=authUser    admin
+    Input Password    id=clearPass    pass
+    Click Element    xpath=//button[@type='submit']   
+
+    # Click Element    xpath=//li[text()='Logout'] 
+    Execute Javascript    document.querySelector("li[data-bind='click: logout']").click()
+
+    Execute Javascript    document.querySelector("#authUser").value='hello';document.querySelector('#clearPass').value='john'
+
+TC15_JavascriptWebElementXpathClick
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    10s
+    Go To    url=https://demo.openemr.io/b/openemr
+    
+    ${ele}     Get WebElement    id=authUser
+    Execute JavaScript     arguments[0].value='admin'     ARGUMENTS      ${ele} 
+    
+    Input Password    id=clearPass    pass
+    Click Element    xpath=//button[@type='submit']   
+    
+    # Execute Javascript    document.querySelector("li[data-bind='click: logout']").click()
+    ${ele}     Get WebElement    xpath=//li[text()='Logout']   
+    Execute JavaScript     arguments[0].click()     ARGUMENTS      ${ele}   
+
+    ${ele1}     Get WebElement    id=authUser
+    ${ele2}     Get WebElement    id=clearPass
+    Execute Javascript    arguments[0].value='hello';arguments[0].value='john'    ARGUMENTS    ${ele1}    ${ele2}
+   
+
+TC16_DynamicDatePage
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    10s
+    Go To    url=https://phptravels.net/hotels
+    # Input Text    id=checkin    06-10-2021    
+    Execute Javascript    document.querySelector('#checkin').value='21-10-2021'
+
+    ${ele}     Get WebElement    xpath=//input[@id='checkout']   
+    Execute JavaScript     arguments[0].value='26-10-2021'    ARGUMENTS      ${ele} 
+    
+TC17_ToolTip
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    10s
+    Go To    url=https://atozgrocery.in/my-account/
+    Input Text    id=reg_email    hello
+    Scroll Element Into View    link=Privacy Policy
+    Click Element    name=register
+    ${tooltip}    Execute Javascript    return document.querySelectorAll("#reg_email")[0].validationMessage
+    Log To Console    ${tooltip}    
+    
+   ${duration}    Execute Javascript    return document.querySelectorAll("video[class='video-stream html5-main-video']")[0].duration
+   Log To Console     ${duration}    
+   
+
+TC18_Upload 
+     Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    10s
+    Go To    https://smallpdf.com/word-to-pdf
+    Choose File    xpath=//input[@type='file']    D:\\Profile.docx
+    
+TC19_BrowserNotifications
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc    options=add_argument("--disable-notifications")
+    Maximize Browser Window
+    Set Selenium Implicit Wait    10s
+    # Execute Javascript    window.scrollBy(0,100)
+    Go To    https://www.malaysiaairlines.com/in/en.html
+
