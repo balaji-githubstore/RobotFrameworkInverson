@@ -1,0 +1,10 @@
+1632295945122	geckodriver	INFO	Listening on 127.0.0.1:49604
+1632295948094	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\JiDi\\AppData\\Local\\Temp\\rust_mozprofileZi4xLV"
+1632295950695	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JiDi\\AppData\\Local\\Temp\\rust_mozprofileZi4xLV\\search.json.mozlz4", (void 0)))
+1632295957052	Marionette	INFO	Listening on port 49612
+1632295957564	Marionette	WARN	TLS certificate errors will be ignored for this session
+1632295962508	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1632295962798	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1632295963291	Marionette	INFO	Stopped listening on port 49612
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined

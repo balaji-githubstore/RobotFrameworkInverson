@@ -35,6 +35,7 @@
 	</section>
 	<section name="problemPreferences">
 		<item key="CODE_STYLE" value="true"/>
+		<item key="RUNTIME" value="true"/>
 	</section>
 	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/Resource/Pages/LoginPage.resource">
 		<item key="activePage" value=""/>
@@ -49,6 +50,36 @@
 		<item key="activePage" value=""/>
 	</section>
 	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/LoginSuite/sample_tests.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/LoginSuite/verify_valid_credential_tests2.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/LoginSuite/verify_invalid_credential_tests2csv.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/LoginSuite/verify_valid_credential_tests2excel.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.project.editor.activePage.OpenEMRApplication">
+		<item key="activePage" value="LibrariesProjectConfigurationEditorPart"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/MessagesSuite/verify_patient_error_tests.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/Resource/Pages/MessageCenterPage.resource">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/DBSuite/db_tests.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./OpenEMRApplication/DemoSuite/db_tests.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./RobotProject/RobotSuite/rb_collections.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./AutomationAdvance/FlaUISuite/notepad_tests.robot">
 		<item key="activePage" value=""/>
 	</section>
 </section>

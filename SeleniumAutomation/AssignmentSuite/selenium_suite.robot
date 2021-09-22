@@ -1,9 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary    
-Library    OperatingSystem    
+Library    OperatingSystem   
+
+Test Timeout    5s 
 
 *** Test Cases ***
 TC1 Valid Credential
+    [Timeout]    10s
     Append To Environment Variable    Path    C:\\components
     Open Browser    browser=gc
     Maximize Browser Window
@@ -33,5 +36,22 @@ TC2 Goto
     Input Text    id=first-name    bala    
     # Scroll Element Into View     xpath=//input[@value='10 - 99']
        
+    Click Element    xpath=//input[@value='10 - 99'] 
+               
+    
+TC3 Goto
+    Append To Environment Variable    Path    C:\\components
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    url=https://www.goto.com/meeting/trial
+    Run Keyword And Ignore Error    Click Element    id=truste-consent-close    
+     
+    Input Text    id=first-name    bala    
+    # Scroll Element Into View     xpath=//input[@value='10 - 99']
+       
     Click Element    xpath=//input[@value='10 - 99']    
     
+
+
+

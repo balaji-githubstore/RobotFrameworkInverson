@@ -3,7 +3,7 @@ Documentation    This file handles browser configuration/application configurati
 
 Library    OperatingSystem    
 Library    SeleniumLibrary     screenshot_root_directory=screenshots\
-# ...    run_on_failure=NONE
+...    run_on_failure=NONE
 
 *** Variables ***
 ${BROWSER NAME}    chrome
@@ -15,11 +15,11 @@ Launch Browser
     Append To Environment Variable    Path    ${EXECDIR}${/}driver
     Open Browser    browser=${BROWSER NAME}
     Maximize Browser Window
-    Set Selenium Implicit Wait    0s
+    Set Selenium Implicit Wait    30s
+    Set Selenium Timeout    50s
     # Set Screenshot Directory    ${EXECDIR}${/}screenshots
     Go To    url=${URL}
-    
 
 End Browser 
-    # Capture Page Screenshot    
+    Capture Page Screenshot    
     Close Browser

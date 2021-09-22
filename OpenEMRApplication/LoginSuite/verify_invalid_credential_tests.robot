@@ -4,15 +4,23 @@ Documentation    This suite will handles all the test case related to invalid cr
    
 Resource    ../Resource/Base/CommonFunctionality.resource
 Resource    ../Resource/Pages/LoginPage.resource
- 
+
+Test Setup    Launch Browser
+Test Teardown    End Browser
+
+Test Template    Verify Invalid Credential Template
+
+Library    DataDriver    file=../TestData/OpenEMRData.xlsx    sheet_name=Verify Invalid Credential
 
 *** Test Cases ***
-Verify Invalid Credential Tests
-    Launch Browser
-    Enter Username    admin123
-    Enter Password    pass 
-    Select Language By Label    English (Indian)   
+TC_${username}_${password}
+    
+
+*** Keywords ***
+Verify Invalid Credential Template
+    [Arguments]    ${username}    ${password}    ${language}    ${expectedValue}
+    Enter Username    ${username}
+    Enter Password    ${password} 
+    Select Language By Label    ${language}   
     Click Login   
-    Validate Invalid Error Message    Invalid username or password  
-    [Teardown]  End Browser
-      
+    Validate Invalid Error Message    ${expectedValue}  

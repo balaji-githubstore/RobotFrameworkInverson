@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210922 14:32:19.743" rpa="true">
+<suite id="s1" name="AutomationAdvance" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\AutomationAdvance">
+<suite id="s1-s1" name="RPAFrameworkSuite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\AutomationAdvance\RPAFrameworkSuite">
+<suite id="s1-s1-s1" name="Email Tests" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\AutomationAdvance\RPAFrameworkSuite\email_tests.robot">
+<test id="s1-s1-s1-t1" name="TC2">
+<kw name="Authorize" library="Email.ImapSmtp">
+<doc>Authorize user to SMTP and IMAP servers.</doc>
+<arguments>
+<arg>account=shinebrightanytime@gmail.com</arg>
+<arg>password=Shine@12345</arg>
+<arg>smtp_server=smtp.gmail.com</arg>
+<arg>imap_server=imap.gmail.com</arg>
+<arg>smtp_port=587</arg>
+<arg>imap_port=993</arg>
+</arguments>
+<status status="PASS" starttime="20210922 14:32:19.888" endtime="20210922 14:32:23.503"></status>
+</kw>
+<kw name="List Messages" library="Email.ImapSmtp">
+<doc>Return list of messages matching criterion.</doc>
+<arguments>
+<arg>SUBJECT "Critical"</arg>
+</arguments>
+<assign>
+<var>@{emails}</var>
+</assign>
+<msg timestamp="20210922 14:32:23.509" level="INFO">List messages: SUBJECT "Critical"</msg>
+<msg timestamp="20210922 14:32:36.677" level="INFO">@{emails} = [ {'Mail-Id': '49', 'Message': &lt;email.message.Message object at 0x000002A2EF457BB0&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com....</msg>
+<status status="PASS" starttime="20210922 14:32:23.506" endtime="20210922 14:32:36.677"></status>
+</kw>
+<kw name="${email} IN [ @{emails} ]" type="for">
+<kw name="${email} = {'Mail-Id': '49', 'Message': &lt;email.message.Message object at 0x000002A2EF457BB0&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. [..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.681" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.680" endtime="20210922 14:32:36.682"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.683" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.682" endtime="20210922 14:32:36.683"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.680" endtime="20210922 14:32:36.683"></status>
+</kw>
+<kw name="${email} = {'Mail-Id': '50', 'Message': &lt;email.message.Message object at 0x000002A2EF4873D0&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. [..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.686" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.685" endtime="20210922 14:32:36.686"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.687" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.687" endtime="20210922 14:32:36.688"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.684" endtime="20210922 14:32:36.688"></status>
+</kw>
+<kw name="${email} = {'Mail-Id': '58', 'Message': &lt;email.message.Message object at 0x000002A2EF487E80&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. [..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.690" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.689" endtime="20210922 14:32:36.691"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.692" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.691" endtime="20210922 14:32:36.692"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.689" endtime="20210922 14:32:36.692"></status>
+</kw>
+<kw name="${email} = {'Mail-Id': '59', 'Message': &lt;email.message.Message object at 0x000002A2EF491850&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. [..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.695" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.694" endtime="20210922 14:32:36.695"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.696" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.696" endtime="20210922 14:32:36.697"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.693" endtime="20210922 14:32:36.697"></status>
+</kw>
+<kw name="${email} = {'Mail-Id': '214', 'Message': &lt;email.message.Message object at 0x000002A2EF49C250&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. ..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.698" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.698" endtime="20210922 14:32:36.698"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.699" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.699" endtime="20210922 14:32:36.699"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.697" endtime="20210922 14:32:36.699"></status>
+</kw>
+<kw name="${email} = {'Mail-Id': '215', 'Message': &lt;email.message.Message object at 0x000002A2EF49CB80&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. ..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.701" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.700" endtime="20210922 14:32:36.701"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.701" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.701" endtime="20210922 14:32:36.702"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.700" endtime="20210922 14:32:36.702"></status>
+</kw>
+<kw name="${email} = {'Mail-Id': '241', 'Message': &lt;email.message.Message object at 0x000002A2EF4A4520&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. ..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.703" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.702" endtime="20210922 14:32:36.703"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.704" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.703" endtime="20210922 14:32:36.704"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.702" endtime="20210922 14:32:36.704"></status>
+</kw>
+<kw name="${email} = {'Mail-Id': '242', 'Message': &lt;email.message.Message object at 0x000002A2EF4A4EB0&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. ..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.705" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.705" endtime="20210922 14:32:36.705"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.706" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.706" endtime="20210922 14:32:36.706"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.704" endtime="20210922 14:32:36.706"></status>
+</kw>
+<kw name="${email} = {'Mail-Id': '81', 'Message': &lt;email.message.Message object at 0x000002A2EF4A9850&gt;, 'Delivered-To': 'shinebrightanytime@gmail.com', 'Received': 'from mail-sor-f73.google.com (mail-sor-f73.google.com. [..." type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[Subject]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.708" level="INFO">Critical security alert</msg>
+<status status="PASS" starttime="20210922 14:32:36.707" endtime="20210922 14:32:36.708"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${email}[From]</arg>
+</arguments>
+<msg timestamp="20210922 14:32:36.709" level="INFO">Google &lt;no-reply@accounts.google.com&gt;</msg>
+<status status="PASS" starttime="20210922 14:32:36.708" endtime="20210922 14:32:36.709"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.707" endtime="20210922 14:32:36.709"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:36.678" endtime="20210922 14:32:36.709"></status>
+</kw>
+<status status="PASS" starttime="20210922 14:32:19.887" endtime="20210922 14:32:36.710" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210922 14:32:19.843" endtime="20210922 14:32:36.710"></status>
+</suite>
+<status status="PASS" starttime="20210922 14:32:19.840" endtime="20210922 14:32:36.713"></status>
+</suite>
+<status status="PASS" starttime="20210922 14:32:19.804" endtime="20210922 14:32:36.714"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tasks</stat>
+<stat pass="1" fail="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="AutomationAdvance">AutomationAdvance</stat>
+<stat pass="1" fail="0" id="s1-s1" name="RPAFrameworkSuite">AutomationAdvance.RPAFrameworkSuite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Email Tests">AutomationAdvance.RPAFrameworkSuite.Email Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

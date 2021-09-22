@@ -12,9 +12,9 @@ Test Template    Verify Valid Credential Template
 
 *** Test Cases ***
 TC1   admin    pass    English (Indian)    Messages
-TC2    physician    physician    Dutch    Messages
-TC3    clinician    clinician    English (Indian)    Messages
-TC4    accountant    accountant    English (Indian)    Messages
+# TC2    physician    physician    Dutch    Messages
+# TC3    clinician    clinician    English (Indian)    Messages
+# TC4    accountant    accountant    English (Indian)    Messages
 
 *** Keywords ***
 Verify Valid Credential Template

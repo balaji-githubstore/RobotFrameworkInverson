@@ -1,90 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210921 14:17:20.308" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.4 on win32)" generated="20210922 13:37:09.897" rpa="false">
 <suite id="s1" name="RobotProject" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject">
 <suite id="s1-s1" name="RobotSuite" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite">
-<suite id="s1-s1-s1" name="Rb Tests" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite\rb_tests.robot">
-<test id="s1-s1-s1-t1" name="TC1">
-<kw name="Log To Console" library="BuiltIn" type="setup">
+<suite id="s1-s1-s1" name="Rb Collections" source="D:\B-Mine\Company\Company\Iverson\automation_workspace\RobotProject\RobotSuite\rb_collections.robot">
+<test id="s1-s1-s1-t1" name="TC4">
+<kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>startTestSetup</arg>
+<arg>${dic}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 14:17:20.406" endtime="20210921 14:17:20.406"></status>
+<status status="PASS" starttime="20210922 13:37:10.062" endtime="20210922 13:37:10.132"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>tc1</arg>
+<arg>${dic}[username]</arg>
 </arguments>
-<status status="PASS" starttime="20210921 14:17:20.407" endtime="20210921 14:17:20.410"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn" type="teardown">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>endTestTeardown</arg>
-</arguments>
-<status status="PASS" starttime="20210921 14:17:20.410" endtime="20210921 14:17:20.411"></status>
-</kw>
-<status status="PASS" starttime="20210921 14:17:20.405" endtime="20210921 14:17:20.411" critical="yes"></status>
-</test>
-<test id="s1-s1-s1-t2" name="TC2">
-<kw name="Log To Console" library="BuiltIn" type="setup">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>startTestSetup</arg>
-</arguments>
-<status status="PASS" starttime="20210921 14:17:20.413" endtime="20210921 14:17:20.414"></status>
+<status status="PASS" starttime="20210922 13:37:10.133" endtime="20210922 13:37:10.136"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>tc2</arg>
+<arg>${dic}[password]</arg>
 </arguments>
-<status status="PASS" starttime="20210921 14:17:20.414" endtime="20210921 14:17:20.415"></status>
+<status status="PASS" starttime="20210922 13:37:10.137" endtime="20210922 13:37:10.140"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn" type="teardown">
-<doc>Logs the given message to the console.</doc>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
 <arguments>
-<arg>endTestTeardown</arg>
+<arg>username=bala</arg>
+<arg>password=bala123</arg>
+<arg>phone=898989</arg>
 </arguments>
-<status status="PASS" starttime="20210921 14:17:20.415" endtime="20210921 14:17:20.415"></status>
+<assign>
+<var>&amp;{locdic}</var>
+</assign>
+<msg timestamp="20210922 13:37:16.670" level="INFO">&amp;{locdic} = { username=bala | password=bala123 | phone=898989 }</msg>
+<status status="PASS" starttime="20210922 13:37:10.140" endtime="20210922 13:37:16.670"></status>
 </kw>
-<status status="PASS" starttime="20210921 14:17:20.412" endtime="20210921 14:17:20.416" critical="yes"></status>
-</test>
-<test id="s1-s1-s1-t3" name="TC3">
-<kw name="Log To Console" library="BuiltIn" type="setup">
-<doc>Logs the given message to the console.</doc>
+<kw name="Get Dictionary Keys" library="Collections">
+<doc>Returns keys of the given ``dictionary`` as a list.</doc>
 <arguments>
-<arg>localsetup</arg>
+<arg>${locdic}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 14:17:20.417" endtime="20210921 14:17:20.417"></status>
+<assign>
+<var>${keys}</var>
+</assign>
+<msg timestamp="20210922 13:37:24.229" level="INFO">${keys} = ['password', 'phone', 'username']</msg>
+<status status="PASS" starttime="20210922 13:37:16.671" endtime="20210922 13:37:24.229"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>tc3</arg>
+<arg>${keys}</arg>
 </arguments>
-<status status="PASS" starttime="20210921 14:17:20.418" endtime="20210921 14:17:20.418"></status>
+<status status="PASS" starttime="20210922 13:37:24.230" endtime="20210922 13:37:28.012"></status>
 </kw>
-<status status="PASS" starttime="20210921 14:17:20.416" endtime="20210921 14:17:20.418" critical="yes"></status>
+<kw name="${key} IN [ @{keys} ]" type="for">
+<kw name="${key} = password" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${locdic}[${key}]</arg>
+</arguments>
+<status status="PASS" starttime="20210922 13:37:33.631" endtime="20210922 13:37:39.731"></status>
+</kw>
+<status status="PASS" starttime="20210922 13:37:33.626" endtime="20210922 13:37:39.732"></status>
+</kw>
+<kw name="${key} = phone" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${locdic}[${key}]</arg>
+</arguments>
+<status status="PASS" starttime="20210922 13:37:42.649" endtime="20210922 13:37:43.867"></status>
+</kw>
+<status status="PASS" starttime="20210922 13:37:39.734" endtime="20210922 13:37:43.868"></status>
+</kw>
+<kw name="${key} = username" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${locdic}[${key}]</arg>
+</arguments>
+<status status="PASS" starttime="20210922 13:37:44.665" endtime="20210922 13:37:45.267"></status>
+</kw>
+<status status="PASS" starttime="20210922 13:37:43.869" endtime="20210922 13:37:45.268"></status>
+</kw>
+<status status="PASS" starttime="20210922 13:37:28.013" endtime="20210922 13:37:45.269"></status>
+</kw>
+<status status="PASS" starttime="20210922 13:37:10.061" endtime="20210922 13:37:45.271" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210921 14:17:20.390" endtime="20210921 14:17:20.419"></status>
+<status status="PASS" starttime="20210922 13:37:10.049" endtime="20210922 13:37:45.272"></status>
 </suite>
-<status status="PASS" starttime="20210921 14:17:20.385" endtime="20210921 14:17:20.421"></status>
+<status status="PASS" starttime="20210922 13:37:10.044" endtime="20210922 13:37:45.278"></status>
 </suite>
-<status status="PASS" starttime="20210921 14:17:20.358" endtime="20210921 14:17:20.423"></status>
+<status status="PASS" starttime="20210922 13:37:09.997" endtime="20210922 13:37:45.281"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="RobotProject">RobotProject</stat>
-<stat pass="3" fail="0" id="s1-s1" name="RobotSuite">RobotProject.RobotSuite</stat>
-<stat pass="3" fail="0" id="s1-s1-s1" name="Rb Tests">RobotProject.RobotSuite.Rb Tests</stat>
+<stat pass="1" fail="0" id="s1" name="RobotProject">RobotProject</stat>
+<stat pass="1" fail="0" id="s1-s1" name="RobotSuite">RobotProject.RobotSuite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Rb Collections">RobotProject.RobotSuite.Rb Collections</stat>
 </suite>
 </statistics>
 <errors>

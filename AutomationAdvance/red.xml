@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="FlaUILibrary" path="C:/Program Files/Python39/Lib/site-packages/FlaUILibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="PDF" path="C:/Program Files/Python39/Lib/site-packages/RPA/PDF/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="Excel.Files" path="C:/Program Files/Python39/Lib/site-packages/RPA/Excel/Files.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="Word.Application" path="C:/Program Files/Python39/Lib/site-packages/RPA/Word/Application.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="JSON" path="C:/Program Files/Python39/Lib/site-packages/RPA/JSON.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="Email.ImapSmtp" path="C:/Program Files/Python39/Lib/site-packages/RPA/Email/ImapSmtp.py" dynamic="false"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>
